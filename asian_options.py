@@ -20,7 +20,7 @@ def floating_ratio(pricing_date: date, start_date: date, end_date: date) -> floa
     """
     if pricing_date > end_date:
         return 0
-    if start_date <     pricing_date:
+    if start_date < pricing_date:
         total = (end_date - start_date).days + 1
         open_part = (end_date - pricing_date).days + 1
 

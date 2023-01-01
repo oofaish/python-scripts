@@ -18,7 +18,6 @@ def floating_ratio(pricing_date: date, start_date: date, end_date: date) -> floa
     tell me how much of the pricing period is still open, and how much of
     it has priced out already.
     """
-    unused_variable = 1
     if pricing_date > end_date:
         return 0
     if start_date < pricing_date:
