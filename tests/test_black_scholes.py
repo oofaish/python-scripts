@@ -3,8 +3,8 @@ import math
 
 import pytest
 
-from black_scholes import calculate_black_scholes as bs
-from enums import OptionType
+from src.black_scholes import calculate_black_scholes as bs
+from src.enums import OptionType
 from tests.helpers_test import EPSILON
 
 

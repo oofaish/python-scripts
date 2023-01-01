@@ -4,9 +4,9 @@ from datetime import date
 import pytest
 from dateutil.relativedelta import relativedelta
 
-from asian_options import get_swap, turnbull_wakeman
-from enums import OptionType
-from helpers import time_to_maturity
+from src.asian_options import get_swap, turnbull_wakeman
+from src.enums import OptionType
+from src.helpers import time_to_maturity
 from tests.helpers_test import EPSILON
 
 

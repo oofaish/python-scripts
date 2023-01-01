@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 from scipy.stats import norm
 
-from enums import OptionType
+from .enums import OptionType
 
 
 @dataclass
