@@ -1,10 +1,10 @@
 name: lint
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   python-black:
-    name: Python Black
+    name: black
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,7 +14,7 @@ jobs:
           src: '.'
   flake8-lint:
     runs-on: ubuntu-latest
-    name: Lint
+    name: flake8
     steps:
       - name: Check out source repository
         uses: actions/checkout@v3
@@ -26,6 +26,7 @@ jobs:
         uses: py-actions/flake8@v2
   isort:
     runs-on: ubuntu-latest  
+    name: isort
     steps:
       - uses: actions/checkout@v3
       - uses: isort/isort-action@v1.0.0
