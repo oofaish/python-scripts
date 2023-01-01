@@ -1,0 +1,19 @@
+[requires]
+python_version = "3.11"
+
+[packages]
+matplotlib = "*"
+isort = "*"
+black = "*"
+mypy = "*"
+pre-commit = "*"
+flake8 = "*"
+numpy = "*"
+jupyter = "*"
+jupyter-client = "*"
+jupyter-core = "*"
+scipy = "*"
+seaborn = "*"
+notebook = "*"
+workalendar = "*"
+pytest = "*"
