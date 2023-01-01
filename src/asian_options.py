@@ -2,9 +2,9 @@ from dataclasses import dataclass
 from datetime import date
 from math import exp, log, sqrt
 
-from .helpers import averaging_period, time_to_maturity
 from .black_scholes import calculate_black_scholes as bs
 from .enums import OptionType
+from .helpers import averaging_period, time_to_maturity
 
 
 @dataclass
